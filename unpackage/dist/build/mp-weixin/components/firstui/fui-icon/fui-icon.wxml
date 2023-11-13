@@ -1,0 +1,1 @@
+<text data-event-opts="{{[['tap',[['handleClick',['$event']]]]]}}" class="{{['fui-icon','data-v-7fd306b1',(!color)?'fui-icon__color':'']}}" style="{{'color:'+(color)+';'+('font-size:'+(size+unit)+';')+('font-weight:'+(fontWeight)+';')}}" bindtap="__e">{{icons[name]}}</text>

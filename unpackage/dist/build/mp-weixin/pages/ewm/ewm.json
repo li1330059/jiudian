@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "tki-barcode": "/components/tki-barcode/tki-barcode"
+  }
+}

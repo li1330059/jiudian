@@ -1,0 +1,1 @@
+<view><view class="{{['progress',Type]}}"><block wx:if="{{Vice==true}}"><view class="progress-text">{{"当前成长值: "+userInfo.czz+"/2500 (再积2500成长值可升级)"}}</view></block><view class="progress-bar" style="{{'width:'+(Width+'%')+';'}}"><block wx:if="{{Main==true}}"><view class="progress-text">当前成长值: 0/2500 (再积2500成长值可升级)</view></block></view></view></view>

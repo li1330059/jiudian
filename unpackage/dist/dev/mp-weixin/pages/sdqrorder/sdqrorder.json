@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "w-time-picker": "/components/w-time-picker/w-time-picker"
+  }
+}

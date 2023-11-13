@@ -1,0 +1,141 @@
+@charset "UTF-8";
+/**
+ * 这里是uni-app内置的常用样式变量
+ *
+ * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量
+ * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App
+ *
+ */
+/**
+ * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能
+ *
+ * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件
+ */
+/* uni.scss */
+/* 颜色变量 */
+/* 行为相关颜色 */
+/* 文字基本颜色 */
+/* 背景颜色 */
+/* 边框颜色 */
+/* 尺寸变量 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* Border Radius */
+/* 水平间距 */
+/* 垂直间距 */
+/* 透明度 */
+/* 文章场景相关 */
+page {
+  width: 100%;
+  height: 100%;
+}
+.myOrder {
+  width: 100%;
+  height: 90%;
+  min-height: 90%;
+  background: url("https://jhd.wangshangquan.top/static/img/bag.png");
+  background-size: 100% 100%;
+  ackground-repeat: no-repeat;
+  background-attachment: fixed;
+  padding-bottom: 150rpx;
+}
+.myOrder .hhh {
+  height: 240rpx;
+  flex: 0 0 100rpx;
+}
+.myOrder .hdd {
+  width: 100%;
+  height: 20rpx;
+  padding-top: 80rpx;
+  margin: 0 auto;
+  display: flex;
+}
+.wraper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 95%;
+}
+.main {
+  height: 80vh;
+  position: relative;
+}
+.main-scroll {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+.myOrder .jpkc .jpkcContent {
+  width: 90%;
+  padding: 18rpx;
+  margin: 30rpx auto;
+  background-image: linear-gradient(to bottom, #83e9bb, #70d9d7);
+  border-radius: 20rpx;
+}
+.myOrder .jpkc .jpkcContent ._ul ._li .iio {
+  position: relative;
+  width: 100rpx;
+  height: 26rpx;
+  top: 20rpx;
+  left: 645rpx;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+.myOrder .jpkc .jpkcContent ._ul ._li .jpkcLeft {
+  display: flex;
+  background-color: #fff;
+  justify-content: space-between;
+  margin-top: -30rpx;
+  padding: 20rpx 35rpx 20rpx 20rpx;
+}
+.myOrder .jpkc .jpkcContent ._ul ._li .jpkcLeft .jpkczi {
+  width: 480rpx;
+  font-size: 28rpx;
+  margin-left: 30rpx;
+}
+.myOrder .jpkc .jpkcContent ._ul ._li .jpkcLeft .jpkcImg {
+  border: 2rpx solid #f8f8f8;
+}
+.myOrder .jpkc .jpkcContent ._ul ._li .jpkcLeft .jpkczi .jpkcBottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.ydd {
+  padding: 15rpx 40rpx;
+  border-radius: 30rpx;
+  color: #fff;
+  background-image: linear-gradient(to right, #f9800b, #f65b19);
+}
+.yddd {
+  height: 50rpx;
+  width: 120rpx;
+  text-align: center;
+  line-height: 50rpx;
+  border-radius: 30rpx;
+  color: #fff;
+  background-image: linear-gradient(to right, #f9800b, #f65b19);
+}
+.lii:nth-child(1) {
+  margin-left: 0 !important;
+}
+.lli:nth-child(1) {
+  margin-left: 1% !important;
+}
+.active {
+  color: #8dc9fd;
+  font-weight: bold;
+}
+.active1 {
+  color: #8dc9fd;
+  font-weight: bold;
+}
+.hidden {
+  display: none;
+}
+.show {
+  display: block;
+}
+

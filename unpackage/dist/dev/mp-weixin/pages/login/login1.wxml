@@ -1,0 +1,1 @@
+<view class="loogin"><form><view data-event-opts="{{[['tap',[['loginn',['$event']]]]]}}" bindtap="__e"><button class="wxlogin" type="primary" open-type="getPhoneNumber" data-event-opts="{{[['getphonenumber',[['getphonenum',['$event']]]]]}}" bindgetphonenumber="__e">手机号码一键登录</button></view></form></view>

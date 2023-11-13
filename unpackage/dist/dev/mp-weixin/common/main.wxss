@@ -1,0 +1,39 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	/*每个页面公共css */
+page{
+		 -webkit-user-select: text; 
+				user-select: text;
+}
+page{
+		color: #333333;
+		font-size: 30rpx;
+}
+._ul{
+		-webkit-padding-start:0;
+		        padding-inline-start:0
+}
+._ul ._li{
+		list-style: none;
+}
+uni-tabber-item .uni-icon{
+		font-size: 50px;
+}
+	/* 	.uni-tabbar .uni-tabbar__icon {
+		width: 500rpx !important;
+	    height: 500rpx !important;
+	} */
+

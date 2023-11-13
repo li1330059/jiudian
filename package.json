@@ -1,0 +1,19 @@
+{
+  "id": "fc-wechat-04",
+  "name": "小程序生成二维码",
+  "displayName": "小程序生成二维码",
+  "version": "1.0.0",
+  "description": "小程序项目 二维码生成器 ",
+  "keywords": [
+    "二维码,小程序"
+  ],
+  "dcloudext": {
+    "category": [
+      "前端组件",
+      "小程序组件"
+    ]
+  },
+  "devDependencies": {
+    "gulp-uglify": "^3.0.2"
+  }
+}

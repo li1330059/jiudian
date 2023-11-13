@@ -1,0 +1,11 @@
+{
+  "navigationBarTitleText": "",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "uni-calendar": "/uni_modules/uni-calendar/components/uni-calendar/uni-calendar",
+    "fui-bottom-popup": "/components/firstui/fui-bottom-popup/fui-bottom-popup",
+    "fui-button": "/components/firstui/fui-button/fui-button",
+    "fui-icon": "/components/firstui/fui-icon/fui-icon",
+    "service-dialog": "/components/serviceDialog"
+  }
+}
