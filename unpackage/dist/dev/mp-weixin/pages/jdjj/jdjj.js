@@ -168,7 +168,7 @@ var _default = {
   onShow: function onShow() {
     var _this = this;
     uni.request({
-      url: this.apiUrl + "index.php/index/xcxsz",
+      url: this.apiUrl + "index/xcxsz",
       success: function success(res) {
         console.log(res);
         _this.jj = res.data.jdjj;

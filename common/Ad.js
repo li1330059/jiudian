@@ -20,7 +20,7 @@ let rewarded = {
 				if (res && res.isEnded || res === undefined) {
 					console.log("获得奖励")
 					// uni.request({
-					// 	url:"https://www.muyukj.net/index.php/index/select_works_all",
+					// 	url:"https://www.muyukj.net/index/select_works_all",
 					// 	success: (res) => {
 					// 		console.log("works")
 					// 		console.log(res)
@@ -40,7 +40,7 @@ let rewarded = {
 						// 	}
 					uni.request({
 						method:"POST",
-						url:"https://www.muyukj.net/index.php/index/cydb",
+						url:"https://www.muyukj.net/index/cydb",
 						data:JSON.stringify({
 							"openid":uni.getStorageSync("openid"),
 							"dbid":id
@@ -92,7 +92,7 @@ let rewarded = {
 						// })
 						// uni.request({
 						
-						// 	url:this.apiUrl+"index.php/index/select_works_all",
+						// 	url:this.apiUrl+"index/select_works_all",
 
 						// 	success: (res) => {
 						// 		console.log("rrrr")

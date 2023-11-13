@@ -224,7 +224,7 @@ var _default = {
       console.log("uu");
       uni.request({
         method: 'POST',
-        url: this.apiUrl + "index.php/index/find_user_user_name",
+        url: this.apiUrl + "index/find_user_user_name",
         data: JSON.stringify({
           'user_name': uni.getStorageSync("openid")
         }),
@@ -252,7 +252,7 @@ var _default = {
       if (this.orderInfo.dd == 2) {
         uni.request({
           method: "POST",
-          url: this.apiUrl + "index.php/index/jdhx",
+          url: this.apiUrl + "index/jdhx",
           data: JSON.stringify({
             "ddhao": this.orderInfo.ddhao
           }),
@@ -276,7 +276,7 @@ var _default = {
       if (this.orderInfo.dd == 1 || this.orderInfo.dd == 3) {
         uni.request({
           method: "POST",
-          url: this.apiUrl + "index.php/index/pwhx",
+          url: this.apiUrl + "index/pwhx",
           data: JSON.stringify({
             "ddhao": this.orderInfo.ddhao
           }),
@@ -300,7 +300,7 @@ var _default = {
       if (this.orderInfo.dd == 0) {
         uni.request({
           method: "POST",
-          url: this.apiUrl + "index.php/index/tchx",
+          url: this.apiUrl + "index/tchx",
           data: JSON.stringify({
             "ddhao": this.orderInfo.ddhao,
             "xm": this.orderInfo.tclxname
@@ -352,7 +352,7 @@ var _default = {
       console.log(this.userInfo.avatar);
       uni.request({
         method: "POST",
-        url: this.apiUrl + "index.php/index/uptx",
+        url: this.apiUrl + "index/uptx",
         data: JSON.stringify({
           'avatar': this.userInfo.avatar,
           'user_name': uni.getStorageSync("openid")
@@ -367,7 +367,7 @@ var _default = {
       var _this3 = this;
       uni.request({
         method: "POST",
-        url: this.apiUrl + "index.php/index/qd",
+        url: this.apiUrl + "index/qd",
         data: JSON.stringify({
           //'avatar' : this.userInfo.avatar,
           'user_name': uni.getStorageSync("openid")
@@ -396,7 +396,7 @@ var _default = {
           if (that.qian == "pwdd" || that.qian == "sddd") {
             uni.request({
               method: "POST",
-              url: that.apiUrl + "index.php/index/ddxqddh2",
+              url: that.apiUrl + "index/ddxqddh2",
               data: JSON.stringify({
                 "ddhao": res.result
               }),
@@ -419,7 +419,7 @@ var _default = {
             console.log(that.arr, "asdasdasdasd");
             uni.request({
               method: "POST",
-              url: that.apiUrl + "index.php/index/ddxqddh2",
+              url: that.apiUrl + "index/ddxqddh2",
               data: JSON.stringify({
                 "ddhao": that.arr[0]
               }),
@@ -436,7 +436,7 @@ var _default = {
           } else {
             uni.request({
               method: "POST",
-              url: that.apiUrl + "index.php/index/ddxqddh",
+              url: that.apiUrl + "index/ddxqddh",
               data: JSON.stringify({
                 "ddhao": res.result
               }),
@@ -483,7 +483,7 @@ var _default = {
       uni.setStorageSync("yhm", this.userInfo.yhm);
       uni.request({
         method: "POST",
-        url: this.apiUrl + "index.php/index/upyhm",
+        url: this.apiUrl + "index/upyhm",
         data: JSON.stringify({
           "yhm": this.ni,
           "user_name": uni.getStorageSync("openid")

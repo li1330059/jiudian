@@ -249,7 +249,7 @@
 			console.log(this.day)
 			uni.request({
 				method:"POST",
-				url:this.apiUrl+"index.php/index/jdxq",
+				url:this.apiUrl+"index/jdxq",
 				data:JSON.stringify({
 					id:this.idd
 				}),
@@ -302,7 +302,7 @@
 				
 				uni.request({
 					method:"POST",
-					url:this.apiUrl+"index.php/index/jdfjxq",
+					url:this.apiUrl+"index/jdfjxq",
 					data:JSON.stringify({
 						id:id
 					}),
@@ -321,7 +321,7 @@
 			lbb(){
 				uni.request({
 					method:"POST",
-					url:this.apiUrl+"index.php/index/jdfj",
+					url:this.apiUrl+"index/jdfj",
 					data:JSON.stringify({
 						uid:this.idd
 					}),

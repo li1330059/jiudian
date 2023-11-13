@@ -315,7 +315,7 @@ var _default = (_components$data$onLo = {
   console.log(this.day);
   uni.request({
     method: "POST",
-    url: this.apiUrl + "index.php/index/jdxq",
+    url: this.apiUrl + "index/jdxq",
     data: JSON.stringify({
       id: this.idd
     }),
@@ -370,7 +370,7 @@ var _default = (_components$data$onLo = {
     this.serviceFlag = true;
     uni.request({
       method: "POST",
-      url: this.apiUrl + "index.php/index/jdfjxq",
+      url: this.apiUrl + "index/jdfjxq",
       data: JSON.stringify({
         id: id
       }),
@@ -389,7 +389,7 @@ var _default = (_components$data$onLo = {
     var _this4 = this;
     uni.request({
       method: "POST",
-      url: this.apiUrl + "index.php/index/jdfj",
+      url: this.apiUrl + "index/jdfj",
       data: JSON.stringify({
         uid: this.idd
       }),

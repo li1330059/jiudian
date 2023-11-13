@@ -270,7 +270,7 @@ var _default = {
 
       uni.request({
         method: "POST",
-        url: this.apiUrl + "index.php/index/tcdd",
+        url: this.apiUrl + "index/tcdd",
         data: JSON.stringify({
           "user_name": uni.getStorageSync("openid"),
           "syrq": this.syrq,
@@ -296,7 +296,7 @@ var _default = {
           }
           uni.request({
             method: "POST",
-            url: _this.apiUrl + "index.php/index/ddxqddh2",
+            url: _this.apiUrl + "index/ddxqddh2",
             data: JSON.stringify({
               "ddhao": _this.ddhao
             }),
@@ -305,7 +305,7 @@ var _default = {
               _this.iddd = rres.data.id;
               uni.request({
                 method: "POST",
-                url: _this.apiUrl + "index.php/Wx/config",
+                url: _this.apiUrl + "Wx/config",
                 data: JSON.stringify({
                   "id": _this.iddd,
                   "openid": uni.getStorageSync("openid"),
@@ -337,7 +337,7 @@ var _default = {
                       }),
                       // uni.request({
                       // 	method:"POST",
-                      // 	url:this.apiUrl+"index.php/index/wxback",
+                      // 	url:this.apiUrl+"index/wxback",
                       // 	data:JSON.stringify({
                       // 		"id":this.iddd+1,
                       // 		"user_name":uni.getStorageSync("openid")
@@ -349,7 +349,7 @@ var _default = {
                       // })
                       // uni.request({
                       // 	method:'POST',
-                      // 	url:this.apiUrl+"index.php/index/find_user_code",
+                      // 	url:this.apiUrl+"index/find_user_code",
                       // 	data:JSON.stringify({
                       // 		'code':uni.getStorageSync("code")
                       // 	}),

@@ -188,7 +188,7 @@
 			hx(id,dd){
 				uni.request({
 					method:"POST",
-					url:this.apiUrl+"index.php/index/xddxq",
+					url:this.apiUrl+"index/xddxq",
 					data:JSON.stringify({
 						"id":id,
 						"dd":dd
@@ -235,7 +235,7 @@
 				
 				uni.request({
 					method:"POST",
-					url:this.apiUrl+"index.php/index/xddxq",
+					url:this.apiUrl+"index/xddxq",
 					data:JSON.stringify({
 						"id":id,
 						"dd":dd
@@ -255,7 +255,7 @@
 				console.log(status)
 				uni.request({
 					method:"POST",
-					url:this.apiUrl+"index.php/index/xddhq",
+					url:this.apiUrl+"index/xddhq",
 					data:JSON.stringify({
 						user_name:uni.getStorageSync("openid"),
 						dd:dd,
@@ -298,7 +298,7 @@
 				console.log(e)
 				uni.request({
 					method:"POST",
-					url:this.apiUrl+"index.php/index/ddhq",
+					url:this.apiUrl+"index/ddhq",
 					data:JSON.stringify({
 						"user_name":uni.getStorageSync("openid"),
 						"status":-e

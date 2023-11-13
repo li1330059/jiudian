@@ -253,7 +253,7 @@ var _default = {
           console.log(res.code); //获取到的code
           that.code = res.code;
           uni.request({
-            url: that.apiUrl + "index.php/index/RequestHttp",
+            url: that.apiUrl + "index/RequestHttp",
             method: 'GET',
             data: {
               code: that.code //wx.login 登录成功后的code  
@@ -263,9 +263,9 @@ var _default = {
               // 换取成功后 暂存这些数据 留作后续操作  
               console.log("cts");
               console.log(cts);
-              that.openId = cts.data.openid; //openid 用户唯一标识  
-              that.unionid = cts.data.unionid; //unionid 开放平台唯一标识   当公众号和小程序同时登录过才会有
-              that.session_key = cts.data.session_key; //session_key  会话密钥 							
+              that.openId = cts.data.data.openid; //openid 用户唯一标识  
+              that.unionid = cts.data.data.unionid; //unionid 开放平台唯一标识   当公众号和小程序同时登录过才会有
+              that.session_key = cts.data.data.session_key; //session_key  会话密钥 							
               console.log("session_key");
               console.log(that.session_key);
             }
@@ -297,8 +297,8 @@ var _default = {
         console.log("unn");
         uni.request({
           method: "POST",
-          url: that.apiUrl + "index.php/index/regist",
-          //	url:that.apiUrl+"index.php/index/regist2",
+          url: that.apiUrl + "index/regist",
+          //	url:that.apiUrl+"index/regist2",
           data: JSON.stringify({
             'user_name': this.openId,
             "phone": this.phoneNumber
@@ -314,7 +314,7 @@ var _default = {
             uni.setStorageSync("openid", res.data.user_name);
             uni.request({
               method: 'POST',
-              url: _this.apiUrl + "index.php/index/find_user_user_name",
+              url: _this.apiUrl + "index/find_user_user_name",
               data: JSON.stringify({
                 'user_name': uni.getStorageSync("openid")
               }),
@@ -350,8 +350,8 @@ var _default = {
       } else {
         uni.request({
           method: "POST",
-          url: that.apiUrl + "index.php/index/regist",
-          //	url:that.apiUrl+"index.php/index/regist2",
+          url: that.apiUrl + "index/regist",
+          //	url:that.apiUrl+"index/regist2",
           data: JSON.stringify({
             'user_name': this.phoneNumber
           }),

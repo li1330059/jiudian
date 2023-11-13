@@ -195,7 +195,7 @@ var _default = {
       var _this = this;
       uni.request({
         method: "POST",
-        url: this.apiUrl + "index.php/index/sdxq",
+        url: this.apiUrl + "index/sdxq",
         data: JSON.stringify({
           "id": this.idd
         }),
@@ -210,7 +210,7 @@ var _default = {
       var _this2 = this;
       uni.request({
         method: "POST",
-        url: this.apiUrl + "index.php/index/pwtc",
+        url: this.apiUrl + "index/pwtc",
         data: JSON.stringify({
           uid: this.idd
         }),
@@ -238,7 +238,7 @@ var _default = {
       this.serviceFlag = true;
       uni.request({
         method: "POST",
-        url: this.apiUrl + "index.php/index/pwtcxq",
+        url: this.apiUrl + "index/pwtcxq",
         data: JSON.stringify({
           id: id
         }),

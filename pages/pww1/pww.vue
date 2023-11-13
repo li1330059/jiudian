@@ -132,8 +132,8 @@
 			baner(){
 				uni.request({
 					
-					//url:"http://wsz.52manhuage.xyz/index.php/index/select_works_all",
-					url:this.apiUrl+"index.php/index/pwbanner",
+					//url:"http://wsz.52manhuage.xyz/index/select_works_all",
+					url:this.apiUrl+"index/pwbanner",
 					success: (res) => {
 						console.log("banners")
 						console.log(res)
@@ -156,7 +156,7 @@
 				console.log(this.tittle)
 				uni.request({
 					
-					url:this.apiUrl+"index.php/index/pw",
+					url:this.apiUrl+"index/pw",
 				
 					success: (res) => {
 						console.log("works")

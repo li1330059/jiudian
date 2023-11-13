@@ -25,7 +25,7 @@
 		},
 		onShow(){
 			uni.request({
-				url:this.apiUrl+"index.php/index/xcxsz",
+				url:this.apiUrl+"index/xcxsz",
 				success: (res) => {
 					console.log(res)
 					this.jj=res.data.jdjj

@@ -253,7 +253,7 @@ var _default = {
   onShow: function onShow() {
     var _this = this;
     uni.request({
-      url: this.apiUrl + "index.php/index/jd",
+      url: this.apiUrl + "index/jd",
       success: function success(res) {
         console.log("酒店");
         console.log(res);

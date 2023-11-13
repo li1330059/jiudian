@@ -216,7 +216,7 @@
 				this.serviceFlag=true
 				uni.request({
 					method:"POST",
-					url:this.apiUrl+"index.php/index/jdfjxq",
+					url:this.apiUrl+"index/jdfjxq",
 					data:JSON.stringify({
 						id:id
 					}),
@@ -275,8 +275,8 @@
 			baner(){
 				uni.request({
 					
-					//url:"http://wsz.52manhuage.xyz/index.php/index/select_works_all",
-					url:this.apiUrl+"index.php/index/sybanner",
+					//url:"http://wsz.52manhuage.xyz/index/select_works_all",
+					url:this.apiUrl+"index/sybanner",
 					success: (res) => {
 						console.log("banners")
 						console.log(res)
@@ -293,8 +293,8 @@
 			tui(){
 				uni.request({
 					
-					//url:"http://wsz.52manhuage.xyz/index.php/index/select_works_all",
-					url:this.apiUrl+"index.php/index/tj",
+					//url:"http://wsz.52manhuage.xyz/index/select_works_all",
+					url:this.apiUrl+"index/tj",
 					success: (res) => {
 						console.log("推荐")
 						console.log(res)

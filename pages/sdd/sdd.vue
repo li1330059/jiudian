@@ -89,7 +89,7 @@
 		},
 		onShow() {
 			uni.request({
-				url:this.apiUrl+"index.php/index/sd",
+				url:this.apiUrl+"index/sd",
 				success: (res) => {
 					console.log("商店")
 					console.log(res)

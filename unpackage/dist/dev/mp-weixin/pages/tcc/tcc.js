@@ -228,7 +228,7 @@ var _default = {
     tc: function tc() {
       var _this = this;
       uni.request({
-        url: this.apiUrl + "index.php/index/tc",
+        url: this.apiUrl + "index/tc",
         success: function success(res) {
           console.log("套餐");
           console.log(res);

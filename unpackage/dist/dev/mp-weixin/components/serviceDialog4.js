@@ -178,7 +178,7 @@ var _default = {
         }
         uni.request({
           method: "POST",
-          url: this.apiUrl + "index.php/index/tkdd",
+          url: this.apiUrl + "index/tkdd",
           data: JSON.stringify({
             ddhao: this.orderInfo.ddhao,
             name: this.orderInfo.lxrName,
@@ -208,7 +208,7 @@ var _default = {
     goPay: function goPay() {
       uni.request({
         method: "POST",
-        url: this.apiUrl + "index.php/Wx/config",
+        url: this.apiUrl + "Wx/config",
         data: JSON.stringify({
           "id": this.orderInfo.id,
           "openid": uni.getStorageSync("openid"),
@@ -240,7 +240,7 @@ var _default = {
               }),
               // uni.request({
               // 	method:"POST",
-              // 	url:this.apiUrl+"index.php/index/wxback",
+              // 	url:this.apiUrl+"index/wxback",
               // 	data:JSON.stringify({
               // 		"id":this.iddd+1,
               // 		"user_name":uni.getStorageSync("openid")
@@ -252,7 +252,7 @@ var _default = {
               // })
               // uni.request({
               // 	method:'POST',
-              // 	url:this.apiUrl+"index.php/index/find_user_code",
+              // 	url:this.apiUrl+"index/find_user_code",
               // 	data:JSON.stringify({
               // 		'code':uni.getStorageSync("code")
               // 	}),

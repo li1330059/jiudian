@@ -122,7 +122,7 @@
 
 			uni.request({
 				method:"POST",
-				url:this.apiUrl+"index.php/index/tcxq",
+				url:this.apiUrl+"index/tcxq",
 				data:JSON.stringify({
 					id:this.idd
 				}),
@@ -155,7 +155,7 @@
 			lxlb(){
 				uni.request({
 					method:"POST",
-					url:this.apiUrl+"index.php/index/tclx",
+					url:this.apiUrl+"index/tclx",
 					data:JSON.stringify({
 						uid:this.idd
 					}),
@@ -178,7 +178,7 @@
 				
 			// 	uni.request({
 			// 		method:"POST",
-			// 		url:this.apiUrl+"index.php/index/jdfjxq",
+			// 		url:this.apiUrl+"index/jdfjxq",
 			// 		data:JSON.stringify({
 			// 			id:id
 			// 		}),
@@ -196,7 +196,7 @@
 				this.serviceFlag=true
 				uni.request({
 					method:"POST",
-					url:this.apiUrl+"index.php/index/tclxxq",
+					url:this.apiUrl+"index/tclxxq",
 					data:JSON.stringify({
 						id:id
 					}),
@@ -215,7 +215,7 @@
 			lbb(){
 				uni.request({
 					method:"POST",
-					url:this.apiUrl+"index.php/index/jdfj",
+					url:this.apiUrl+"index/jdfj",
 					data:JSON.stringify({
 						uid:this.idd
 					}),

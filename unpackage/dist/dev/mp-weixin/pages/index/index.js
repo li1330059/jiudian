@@ -269,7 +269,7 @@ var _default = {
       this.serviceFlag = true;
       uni.request({
         method: "POST",
-        url: this.apiUrl + "index.php/index/jdfjxq",
+        url: this.apiUrl + "index/jdfjxq",
         data: JSON.stringify({
           id: id
         }),
@@ -329,8 +329,8 @@ var _default = {
     baner: function baner() {
       var _this3 = this;
       uni.request({
-        //url:"http://wsz.52manhuage.xyz/index.php/index/select_works_all",
-        url: this.apiUrl + "index.php/index/sybanner",
+        //url:"http://wsz.52manhuage.xyz/index/select_works_all",
+        url: this.apiUrl + "index/sybanner",
         success: function success(res) {
           console.log("banners");
           console.log(res);
@@ -347,8 +347,8 @@ var _default = {
     tui: function tui() {
       var _this4 = this;
       uni.request({
-        //url:"http://wsz.52manhuage.xyz/index.php/index/select_works_all",
-        url: this.apiUrl + "index.php/index/tj",
+        //url:"http://wsz.52manhuage.xyz/index/select_works_all",
+        url: this.apiUrl + "index/tj",
         success: function success(res) {
           console.log("推荐");
           console.log(res);

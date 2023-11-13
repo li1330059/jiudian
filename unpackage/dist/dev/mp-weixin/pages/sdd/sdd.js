@@ -248,7 +248,7 @@ var _default = {
   onShow: function onShow() {
     var _this = this;
     uni.request({
-      url: this.apiUrl + "index.php/index/sd",
+      url: this.apiUrl + "index/sd",
       success: function success(res) {
         console.log("商店");
         console.log(res);

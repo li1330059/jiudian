@@ -208,7 +208,7 @@ var _default = {
     var _this = this;
     uni.request({
       method: "POST",
-      url: this.apiUrl + "index.php/index/pwtcxq",
+      url: this.apiUrl + "index/pwtcxq",
       data: JSON.stringify({
         id: this.tclxid
       }),
@@ -273,7 +273,7 @@ var _default = {
       if (this.liverName != "" && phoneReg.test(this.lxrPhone)) {
         uni.request({
           method: "POST",
-          url: this.apiUrl + "index.php/index/tcdd",
+          url: this.apiUrl + "index/tcdd",
           data: JSON.stringify({
             "user_name": uni.getStorageSync("openid"),
             "syrq": this.syrq,
@@ -298,7 +298,7 @@ var _default = {
               });
               uni.request({
                 method: "POST",
-                url: _this2.apiUrl + "index.php/index/ddxqddh2",
+                url: _this2.apiUrl + "index/ddxqddh2",
                 data: JSON.stringify({
                   "ddhao": _this2.ddhao
                 }),
@@ -307,7 +307,7 @@ var _default = {
                   _this2.iddd = rres.data.id;
                   uni.request({
                     method: "POST",
-                    url: _this2.apiUrl + "index.php/Wx/config",
+                    url: _this2.apiUrl + "Wx/config",
                     data: JSON.stringify({
                       "id": _this2.iddd,
                       "openid": uni.getStorageSync("openid"),
@@ -339,7 +339,7 @@ var _default = {
                           }),
                           // uni.request({
                           // 	method:"POST",
-                          // 	url:this.apiUrl+"index.php/index/wxback",
+                          // 	url:this.apiUrl+"index/wxback",
                           // 	data:JSON.stringify({
                           // 		"id":this.iddd+1,
                           // 		"user_name":uni.getStorageSync("openid")
@@ -351,7 +351,7 @@ var _default = {
                           // })
                           // uni.request({
                           // 	method:'POST',
-                          // 	url:this.apiUrl+"index.php/index/find_user_code",
+                          // 	url:this.apiUrl+"index/find_user_code",
                           // 	data:JSON.stringify({
                           // 		'code':uni.getStorageSync("code")
                           // 	}),
