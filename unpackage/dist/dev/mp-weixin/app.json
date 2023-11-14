@@ -1,57 +1,58 @@
 {
-  "pages": [
-    "pages/index/index",
-    "pages/mine/mine",
-    "pages/pww/pww",
-    "pages/jdd/jdd",
-    "pages/sdd/sdd",
-    "pages/tcc/tcc",
-    "pages/pwDetail/pwDetail",
-    "pages/jdd/jdDetail/jdDetail",
-    "pages/jdDetail/jdDetail",
-    "pages/qrorder/qrorder",
-    "pages/tcqrorder/tcqrorder",
-    "pages/pwqrorder/pwqrorder",
-    "pages/sdqrorder/sdqrorder",
-    "pages/tcDetail/tcDetail",
-    "pages/sdDetail/sdDetail",
-    "pages/myOrder/myOrder",
-    "pages/login/login",
-    "pages/login/login1",
-    "pages/ewm/ewm",
-    "pages/bff/bff",
-    "pages/yhui/yhui",
-    "pages/jdjj/jdjj",
-    "pages/kyy/kyy"
-  ],
-  "subPackages": [],
-  "window": {
-    "navigationStyle": "custom",
-    "navigationBarTextStyle": "black",
-    "navigationBarTitleText": "uni-app",
-    "navigationBarBackgroundColor": "#F8F8F8",
-    "backgroundColor": "#F8F8F8"
-  },
-  "tabBar": {
-    "color": "#7e7e7e",
-    "selectedColor": "#70d9d7",
-    "borderStyle": "black",
-    "fontSize": "20px",
-    "backgroundColor": "#ffffff",
-    "list": [
-      {
-        "pagePath": "pages/index/index",
-        "iconPath": "/static/img/home.png",
-        "selectedIconPath": "/static/img/home1.png",
-        "text": "首页"
-      },
-      {
-        "pagePath": "pages/mine/mine",
-        "iconPath": "/static/img/my.png",
-        "selectedIconPath": "/static/img/my1.png",
-        "text": "我的"
-      }
-    ]
-  },
-  "usingComponents": {}
+    "pages": [
+        "pages/index/index",
+        "pages/mine/mine",
+        "pages/pww/pww",
+        "pages/jdd/jdd",
+        "pages/sdd/sdd",
+        "pages/tcc/tcc",
+        "pages/pwDetail/pwDetail",
+        "pages/jdd/jdDetail/jdDetail",
+        "pages/jdDetail/jdDetail",
+        "pages/qrorder/qrorder",
+        "pages/tcqrorder/tcqrorder",
+        "pages/pwqrorder/pwqrorder",
+        "pages/sdqrorder/sdqrorder",
+        "pages/tcDetail/tcDetail",
+        "pages/sdDetail/sdDetail",
+        "pages/myOrder/myOrder",
+        "pages/login/login",
+        "pages/login/login1",
+        "pages/ewm/ewm",
+        "pages/bff/bff",
+        "pages/yhui/yhui",
+        "pages/jdjj/jdjj",
+        "pages/kyy/kyy"
+    ],
+    "subPackages": [],
+    "window": {
+        "navigationStyle": "custom",
+        "navigationBarTextStyle": "black",
+        "navigationBarTitleText": "uni-app",
+        "navigationBarBackgroundColor": "#F8F8F8",
+        "backgroundColor": "#F8F8F8"
+    },
+    "tabBar": {
+        "color": "#7e7e7e",
+        "selectedColor": "#70d9d7",
+        "borderStyle": "black",
+        "fontSize": "20px",
+        "backgroundColor": "#ffffff",
+        "list": [
+            {
+                "pagePath": "pages/index/index",
+                "iconPath": "/static/img/home.png",
+                "selectedIconPath": "/static/img/home1.png",
+                "text": "首页"
+            },
+            {
+                "pagePath": "pages/mine/mine",
+                "iconPath": "/static/img/my.png",
+                "selectedIconPath": "/static/img/my1.png",
+                "text": "我的"
+            }
+        ]
+    },
+    "usingComponents": {},
+    "sitemapLocation": "sitemap.json"
 }

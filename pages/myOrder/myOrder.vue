@@ -20,11 +20,11 @@
 			<view class="myBody">
 				<!-- <tabs  v-model="current1" :tabs="tabs1" @change="changeTab1"></tabs> -->
 				<!-- <tabs  v-model="current" :tabs="tabs" @change="changeTab"></tabs> -->
-				<view style="width: 100%; height: 90rpx;  background-color: #fff; position: fixed; bottom: 0; z-index: 999; line-height: 90rpx;">
+<!-- 				<view style="width: 100%; height: 90rpx;  background-color: #fff; position: fixed; bottom: 0; z-index: 999; line-height: 90rpx;">
 					<ul style="width: 90%; margin: 0 auto;">
 						<li class="lii" style="display: inline-block; margin-left: 20%;"  v-for="(item,index) in tabs":key="index" @click="btn(index,item.dd)" :class="{'active' : current==index}">{{item.value}}</li>
 					</ul>
-				</view>
+				</view> -->
 		
 				<view class="main">
 					<scroll-view class="main-scroll" scroll-y="true">
@@ -132,23 +132,6 @@
 			return {
 				//屏幕高度
 				screenHeight: 0,
-				tabs:[{
-					index:0,
-					value:"票务",
-					dd:1
-				},{
-					index:1,
-					value:"酒店",
-					dd:2
-				},{
-					index:2,
-					value:"套餐",
-					dd:0
-				},{
-					index:3,
-					value:"商店",
-					dd:3
-				}],
 				tabs1:[{
 					index:0,
 					value:"全部",
@@ -198,10 +181,10 @@
 			 console.log(this.current1)
 			 
 			 if(options.type==3){
-				 this.orderInfoo(this.dd,2)
+				 this.orderInfoo(2)
 			 }
 			  if(options.type!=2 && options.type!=3){
-				this.orderInfoo(this.dd,options.type) 
+				this.orderInfoo(options.type) 
 			 }
 			// this.changeTab(options.type)
 		},
@@ -227,8 +210,7 @@
 					method:"POST",
 					url:this.apiUrl+"index/xddxq",
 					data:JSON.stringify({
-						"id":id,
-						"dd":dd
+						"id":id
 					}),
 					success: (res) => {
 						console.log("订单详情")
@@ -312,8 +294,7 @@
 					method:"POST",
 					url:this.apiUrl+"index/xddxq",
 					data:JSON.stringify({
-						"id":id,
-						"dd":dd
+						"id":id
 					}),
 					success: (res) => {
 						console.log("订单详情")
@@ -328,21 +309,17 @@
 					}
 				})
 			},
-			orderInfoo(dd,status){
-				console.log("dd")
-				console.log(dd)
+			orderInfoo(status){
 				console.log(status)
 				uni.request({
 					method:"POST",
 					url:this.apiUrl+"index/xddhq",
 					data:JSON.stringify({
 						user_name:uni.getStorageSync("openid"),
-						dd:dd,
 						status:status
 					}),
 					success: (res) => {
 						console.log("订单111")
-						console.log(dd)
 						console.log(status)
 						console.log(res)
 						this.works=res.data
@@ -359,15 +336,14 @@
 					}
 				})
 			},
-			btn(index,dd){
-				this.dd=dd
+			btn(index){
 				this.current=index
-				this.orderInfoo(this.dd,this.status)
+				this.orderInfoo(this.status)
 			},
 			btnn(index,status){
 				this.status=status
 				this.current1=index
-				this.orderInfoo(this.dd,this.status)
+				this.orderInfoo(this.status)
 			},
 			changeTab(e){
 				console.log("curt")

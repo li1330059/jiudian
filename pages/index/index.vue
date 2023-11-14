@@ -1,6 +1,7 @@
 <template>
 <view class="home">
 		<view class="bj">
+			<image style="width: 100%;position: absolute;top: 0;z-index: -1;" :src="banners.bg_groud_img"></image>
 			<view class="ipt">
 				<input type="text" placeholder="张家口奥林匹克公园" placeholder-class="iipt" />
 				<image style="width: 40rpx; height: 40rpx; position: relative; left: 55rpx; top: -50rpx;" src="../../static/img/sousuo.png"></image>
@@ -20,19 +21,10 @@
 			<image @click="tc" style="width: 344rpx; height: 159rpx;" src="../../static/img/tcan.png"></image>
 			<image @click="shop" style="width: 344rpx; height: 159rpx; margin-left: 20rpx;" src="../../static/img/shop.png"></image>
 		</view>
-		<swiper @click="jddj" class="swiper" circular indicator-dots="true" autoplay="true" interval="5000"
+		<swiper class="swiper" circular indicator-dots="true" autoplay="true" interval="5000"
 			duration="500" indicator-color="rgba(255, 255, 255, .5)" indicator-active-color="#ffffff">
-			<swiper-item>
-				<image style="width: 100%; height: 159rpx;" :src="banners.banner1"></image>
-			</swiper-item>
-			<swiper-item>
-				<image style="width: 100%; height: 159rpx;" :src="banners.banner2"></image>
-			</swiper-item>
-			<swiper-item>
-				<image style="width: 100%; height: 159rpx;" :src="banners.banner3"></image>
-			</swiper-item>
-			<swiper-item>
-				<image style="width: 100%; height: 159rpx;" :src="banners.banner4"></image>
+			<swiper-item v-for="(item,index) in banners.banner" @click="goDetail(item.url)">
+				<image style="width: 100%; height: 159rpx;" :src="item.img"></image>
 			</swiper-item>
 		</swiper>
 		<view class="jxx">
@@ -41,7 +33,7 @@
 			  <template  v-for="(item,index) in tuis" v-if="index%2==0">
 			    <tr>
 			    <!--  <td class="video-row" @click="goto(item.id,item.title)">-->
-			      <td  class="video-row" @click="detail(item.id)">
+			      <td  class="video-row" @click="detail(item.uid)">
 			        <div class="row-line">
 			         <!-- <img :src="item.spurl" width="100%"/> -->
 				<scroll-view  scroll-x="true" style="width: 100%;  overflow:hidden;white-space:nowrap;">
@@ -167,7 +159,7 @@
 		data() {
 		
 		return {
-				banners:[],
+				banners:{},
 				wth:[],
 				tuis:[],
 				room:[],
@@ -237,9 +229,9 @@
 					url:"/pages/qrorder/qrorder?startDate="+this.startDate+"&today="+this.today+"&stopDate="+this.endDate+"&day="+this.day+"&room="+JSON.stringify(this.room)+"&allDate="+this.allDate+"&idd="+this.room.id+"&beforeDate="+this.beforeDate+"&afterDate="+this.afterDate
 				})
 			},
-			jddj(){
+			goDetail(url){
 				uni.navigateTo({
-					url:"/pages/jdjj/jdjj"
+					url:url
 				})
 			},
 			closeService() {
@@ -280,7 +272,7 @@
 					success: (res) => {
 						console.log("banners")
 						console.log(res)
-						this.banners = res.data
+						this.banners = res.data.data
 						console.log(this.banners)
 					}
 				})				
@@ -314,7 +306,6 @@
 	width: 750rpx;
 	height: 378rpx;
 	padding-top: 82rpx;
-	background: url("https://jhd.wangshangquan.top/static/img/sj.png");
 	background-size: cover;	
 }
 .home .bj .ipt input{

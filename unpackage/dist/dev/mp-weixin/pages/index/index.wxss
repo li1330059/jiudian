@@ -3,7 +3,6 @@
 	width: 750rpx;
 	height: 378rpx;
 	padding-top: 82rpx;
-	background: url("https://jhd.wangshangquan.top/static/img/sj.png");
 	background-size: cover;
 }
 .home .bj .ipt input{
