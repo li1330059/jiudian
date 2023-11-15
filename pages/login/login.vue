@@ -130,9 +130,9 @@
 							success: (cts) => {  						  // 换取成功后 暂存这些数据 留作后续操作  
 								console.log("cts")
 								console.log(cts)
-								that.openId=cts.data.openid               //openid 用户唯一标识  
-								that.unionid=cts.data.unionid             //unionid 开放平台唯一标识   当公众号和小程序同时登录过才会有
-								that.session_key=cts.data.session_key     //session_key  会话密钥 							
+								that.openId=cts.data.data.openid               //openid 用户唯一标识  
+								that.unionid=cts.data.data.unionid             //unionid 开放平台唯一标识   当公众号和小程序同时登录过才会有
+								that.session_key=cts.data.data.session_key     //session_key  会话密钥 							
 								console.log("session_key")					
 								console.log(that.session_key)
 								
