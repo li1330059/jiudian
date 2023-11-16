@@ -210,7 +210,8 @@
 					method:"POST",
 					url:this.apiUrl+"index/xddxq",
 					data:JSON.stringify({
-						"id":id
+						"id":id,
+						"dd":dd
 					}),
 					success: (res) => {
 						console.log("订单详情")
@@ -294,7 +295,8 @@
 					method:"POST",
 					url:this.apiUrl+"index/xddxq",
 					data:JSON.stringify({
-						"id":id
+						"id":id,
+						"dd":dd
 					}),
 					success: (res) => {
 						console.log("订单详情")

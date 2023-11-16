@@ -33,7 +33,7 @@
 			  <template  v-for="(item,index) in tuis" v-if="index%2==0">
 			    <tr>
 			    <!--  <td class="video-row" @click="goto(item.id,item.title)">-->
-			      <td  class="video-row" @click="detail(item.uid)">
+			      <td  class="video-row" @click="detail(item.id)">
 			        <div class="row-line">
 			         <!-- <img :src="item.spurl" width="100%"/> -->
 				<scroll-view  scroll-x="true" style="width: 100%;  overflow:hidden;white-space:nowrap;">
