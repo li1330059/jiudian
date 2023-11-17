@@ -571,7 +571,7 @@
 		width: 100%;
 		height: 90rpx;
 		background-color: #fff;
-		position: absolute;
+		position: fixed;
 		bottom: 0;		
 	}
 	

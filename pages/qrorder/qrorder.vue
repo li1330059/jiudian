@@ -101,6 +101,15 @@
 				ddhao:""
 			}
 		},
+		onShow() {
+			console.log(uni.getStorageSync("token"))
+			if(uni.getStorageSync("token")==""){
+				uni.navigateTo({
+					url:"/pages/login/login"
+				})
+			}
+		//	this.username=uni.getStorageSync("username")
+		},
 		onLoad(options) {
 			console.log("optn")
 			console.log(options)

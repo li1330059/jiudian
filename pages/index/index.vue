@@ -226,7 +226,7 @@
 			},
 			yud(){
 				uni.navigateTo({
-					url:"/pages/qrorder/qrorder?startDate="+this.startDate+"&today="+this.today+"&stopDate="+this.endDate+"&day="+this.day+"&room="+JSON.stringify(this.room)+"&allDate="+this.allDate+"&idd="+this.room.id+"&beforeDate="+this.beforeDate+"&afterDate="+this.afterDate
+					url:"/pages/qrorder/qrorder?startDate="+this.startDate+"&today="+this.today+"&stopDate="+this.endDate+"&day="+this.day+"&room="+JSON.stringify(this.room)+"&allDate="+this.allDate+"&idd="+this.room.uid+"&beforeDate="+this.beforeDate+"&afterDate="+this.afterDate
 				})
 			},
 			goDetail(url){
