@@ -230,8 +230,9 @@
 				})
 			},
 			goDetail(url){
+				console.log('/pages/' + url[0] + '/' + url[0] + '?id=' + url[1])
 				uni.navigateTo({
-					url:url
+					url:'/pages/' + url[0] + '/' + url[0] + '?id=' + url[1]
 				})
 			},
 			closeService() {
