@@ -133,7 +133,7 @@
 				uni.request({
 					
 					//url:"http://wsz.52manhuage.xyz/index/select_works_all",
-					url:this.apiUrl+"index/pwbanner",
+					url:this.oldApiUrl+"index/pwbanner",
 					success: (res) => {
 						console.log("banners")
 						console.log(res)
@@ -156,7 +156,7 @@
 				console.log(this.tittle)
 				uni.request({
 					
-					url:this.apiUrl+"index/pw",
+					url:this.oldApiUrl+"index/pw",
 				
 					success: (res) => {
 						console.log("works")

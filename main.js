@@ -3,7 +3,7 @@ import uView from 'uview-ui'
 // #ifndef VUE3
 import Vue from 'vue'
 Vue.prototype.apiUrl="https://www.zjjatjd.top/"
-// Vue.prototype.apiUrl="https://jhd.wangshangquan.top/"
+Vue.prototype.oldApiUrl="https://jhd.wangshangquan.top/"
 
 Vue.use(uView)
 // 如此配置即可

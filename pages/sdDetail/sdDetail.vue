@@ -57,7 +57,7 @@
 			pwdt(){
 				uni.request({
 					method:"POST",
-					url:this.apiUrl+"index/sdxq",
+					url:this.oldApiUrl+"index/sdxq",
 					data:JSON.stringify({
 						"id":this.idd
 					}),
@@ -71,7 +71,7 @@
 			lxlb(){
 				uni.request({
 					method:"POST",
-					url:this.apiUrl+"index/pwtc",
+					url:this.oldApiUrl+"index/pwtc",
 					data:JSON.stringify({
 						uid:this.idd
 					}),
@@ -98,7 +98,7 @@
 				this.serviceFlag=true
 				uni.request({
 					method:"POST",
-					url:this.apiUrl+"index/pwtcxq",
+					url:this.oldApiUrl+"index/pwtcxq",
 					data:JSON.stringify({
 						id:id
 					}),

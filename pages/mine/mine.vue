@@ -477,7 +477,7 @@
 				console.log("uu")
 				uni.request({
 						method:'POST',
-						url:this.apiUrl+"index/find_user_user_name",
+						url:this.oldApiUrl+"index/find_user_user_name",
 						data:JSON.stringify({
 							'user_name':uni.getStorageSync("openid")
 						}),
@@ -495,7 +495,7 @@
 							 // this.zxx()
 							if(res.data.avatar==null || res.data.avatar==""){
 								console.log("微信头像")
-								this.userInfo.avatar=this.apiUrl+"static/img/tou.png"
+								this.userInfo.avatar=this.oldApiUrl+"static/img/tou.png"
 							}
 						}
 					})					
@@ -505,7 +505,7 @@
 				if(this.orderInfo.dd==2){
 					uni.request({
 						method:"POST",
-						url:this.apiUrl+"index/jdhx",
+						url:this.oldApiUrl+"index/jdhx",
 						data:JSON.stringify({
 							"ddhao":this.orderInfo.ddhao
 					}),
@@ -529,7 +529,7 @@
 				if(this.orderInfo.dd==1 || this.orderInfo.dd==3){
 					uni.request({
 						method:"POST",
-						url:this.apiUrl+"index/pwhx",
+						url:this.oldApiUrl+"index/pwhx",
 						data:JSON.stringify({
 							"ddhao":this.orderInfo.ddhao
 					}),
@@ -553,7 +553,7 @@
 				if(this.orderInfo.dd==0){
 					uni.request({
 						method:"POST",
-						url:this.apiUrl+"index/tchx",
+						url:this.oldApiUrl+"index/tchx",
 						data:JSON.stringify({
 							"ddhao":this.orderInfo.ddhao,
 							"xm":this.orderInfo.tclxname
@@ -604,7 +604,7 @@
 				console.log(this.userInfo.avatar)
 				uni.request({
 					method:"POST",
-					url:this.apiUrl+"index/uptx",
+					url:this.oldApiUrl+"index/uptx",
 					data:JSON.stringify({
 						'avatar' : this.userInfo.avatar,
 						'user_name' : uni.getStorageSync("openid")
@@ -619,7 +619,7 @@
 			qdd(){
 				uni.request({
 					method:"POST",
-					url:this.apiUrl+"index/qd",
+					url:this.oldApiUrl+"index/qd",
 					data:JSON.stringify({
 						//'avatar' : this.userInfo.avatar,
 						'user_name' : uni.getStorageSync("openid")
@@ -650,7 +650,7 @@
 						if(that.qian=="pwdd" || that.qian=="sddd"){
 							uni.request({
 								method:"POST",
-								url:that.apiUrl+"index/ddxqddh2",
+								url:that.oldApiUrl+"index/ddxqddh2",
 								data:JSON.stringify({
 									"ddhao":res.result
 								}),
@@ -677,7 +677,7 @@
 							console.log(that.arr,"asdasdasdasd");
 							uni.request({
 								method:"POST",
-								url:that.apiUrl+"index/ddxqddh2",
+								url:that.oldApiUrl+"index/ddxqddh2",
 								data:JSON.stringify({
 									"ddhao":that.arr[0]
 								}),
@@ -698,7 +698,7 @@
 						}else{
 							uni.request({
 								method:"POST",
-								url:that.apiUrl+"index/ddxqddh",
+								url:that.oldApiUrl+"index/ddxqddh",
 								data:JSON.stringify({
 									"ddhao":res.result
 								}),
@@ -752,7 +752,7 @@
 				uni.setStorageSync("yhm",this.userInfo.yhm)
 				uni.request({
 					method:"POST",
-					url:this.apiUrl+"index/upyhm",
+					url:this.oldApiUrl+"index/upyhm",
 					data:JSON.stringify({
 						"yhm":this.ni,
 						"user_name":uni.getStorageSync("openid")

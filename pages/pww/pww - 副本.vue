@@ -69,7 +69,7 @@
 			},
 			tc(){
 				uni.request({
-					url:this.apiUrl+"index/pw",
+					url:this.oldApiUrl+"index/pw",
 					success: (res) => {
 						console.log("套餐")
 						console.log(res)

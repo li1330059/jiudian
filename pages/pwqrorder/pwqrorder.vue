@@ -134,7 +134,7 @@
 		onShow() {
 			uni.request({
 				method:"POST",
-				url:this.apiUrl+"index/pwtcxq",
+				url:this.oldApiUrl+"index/pwtcxq",
 				data:JSON.stringify({
 					id:this.tclxid
 					
@@ -206,7 +206,7 @@
 					uni.request({
 
 						method:"POST",
-						url:this.apiUrl+"index/tcdd",
+						url:this.oldApiUrl+"index/tcdd",
 						data:JSON.stringify({
 							"user_name":uni.getStorageSync("openid"),
 							"syrq":this.syrq,
@@ -233,7 +233,7 @@
 								})
 								uni.request({
 									method:"POST",
-									url:this.apiUrl+"index/ddxqddh2",
+									url:this.oldApiUrl+"index/ddxqddh2",
 									data:JSON.stringify({
 										"ddhao":this.ddhao
 									}),
@@ -242,7 +242,7 @@
 										this.iddd=rres.data.id	
 										uni.request({
 											method:"POST",
-											url:this.apiUrl+"Wx/config",
+											url:this.oldApiUrl+"Wx/config",
 											data:JSON.stringify({
 												"id":this.iddd,
 												"openid":uni.getStorageSync("openid"),
@@ -269,7 +269,7 @@
 																	}),
 																	// uni.request({
 																	// 	method:"POST",
-																	// 	url:this.apiUrl+"index/wxback",
+																	// 	url:this.oldApiUrl+"index/wxback",
 																	// 	data:JSON.stringify({
 																	// 		"id":this.iddd+1,
 																	// 		"user_name":uni.getStorageSync("openid")
@@ -281,7 +281,7 @@
 																	// })
 																	// uni.request({
 																	// 	method:'POST',
-																	// 	url:this.apiUrl+"index/find_user_code",
+																	// 	url:this.oldApiUrl+"index/find_user_code",
 																	// 	data:JSON.stringify({
 																	// 		'code':uni.getStorageSync("code")
 																	// 	}),
