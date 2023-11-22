@@ -120,7 +120,7 @@
 						that.code=res.code
 
 						uni.request({
-							url: that.oldApiUrl+"index/RequestHttp", 
+							url: that.apiUrl+"index/RequestHttp", 
 							method:'GET',  
 							data: {  
 								 
@@ -166,7 +166,7 @@
 						console.log("unn")
 						uni.request({
 							method:"POST",
-							url:that.oldApiUrl+"index/regist",
+							url:that.apiUrl+"index/regist",
 						//	url:that.apiUrl+"index/regist2",
 							data:JSON.stringify({
 								'user_name' : this.openId,
@@ -182,7 +182,7 @@
 								uni.setStorageSync("openid",res.data.user_name)
 								uni.request({
 										method:'POST',
-										url:this.oldApiUrl+"index/find_user_user_name",
+										url:this.apiUrl+"index/find_user_user_name",
 										data:JSON.stringify({
 											'user_name':uni.getStorageSync("openid")
 										}),
@@ -220,8 +220,8 @@
 					}else{
 						uni.request({
 							method:"POST",
-							url:that.oldApiUrl+"index/regist",
-						//	url:that.oldApiUrl+"index/regist2",
+							url:that.apiUrl+"index/regist",
+						//	url:that.apiUrl+"index/regist2",
 							data:JSON.stringify({
 								'user_name':this.phoneNumber													
 							}),
