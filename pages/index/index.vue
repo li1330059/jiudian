@@ -33,7 +33,7 @@
 			  <template  v-for="(item,index) in tuis" v-if="index%2==0">
 			    <tr>
 			    <!--  <td class="video-row" @click="goto(item.id,item.title)">-->
-			      <td  class="video-row" @click="detail(item.id)">
+			      <td  class="video-row" @click="detail(item.id,item.stock)">
 			        <div class="row-line">
 			         <!-- <img :src="item.spurl" width="100%"/> -->
 				<scroll-view  scroll-x="true" style="width: 100%;  overflow:hidden;white-space:nowrap;">
@@ -204,7 +204,13 @@
 			}
 		},
 		methods: {
-			detail(id){
+			detail(id,stock){
+				if(!stock||stock==0){
+					uni.showToast({
+						title:"库存不足"
+					})
+					return;
+				}
 				this.serviceFlag=true
 				uni.request({
 					method:"POST",

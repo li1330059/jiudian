@@ -29,10 +29,10 @@
 					</view>
 				</view>
 				<view style="width: 100%; height: 150rpx;  text-align: center; background-color: #f5f5f5;">
-					<swiper class="swiper" circular indicator-dots="true" autoplay="true" interval="5000"
+					<swiper class="swiper" style="width: 715rpx; height: 120rpx; margin-top: 20rpx;" circular indicator-dots="true" autoplay="true" interval="5000"
 						duration="500" indicator-color="rgba(255, 255, 255, .5)" indicator-active-color="#ffffff">
 						<swiper-item v-for="(item,index) in JSON.parse(works.bannertp)">
-							<image style="width: 715rpx; height: 120rpx; margin-top: 20rpx;" :src="item.img"></image>
+							<image style="width: 715rpx; height: 120rpx;" :src="item.img"></image>
 						</swiper-item>
 					</swiper>
 				</view>
@@ -72,7 +72,7 @@
 					<!-- <view class="jpkcTitle">精品课程</view> -->
 					<view class="jpkcContent">
 						<ul>
-							<li  @click="kcc(item.id)" v-for="(item,index) in lbs" :key="index">
+							<li  @click="kcc(item.id,item.stock)" v-for="(item,index) in lbs" :key="index">
 								<!-- <image class="iio" src="../../static/img/zhd.png"></image> -->
 								<view class="jpkcLeft">
 									<view class="jpkcImg">
@@ -302,7 +302,13 @@
 				this.serviceFlag = false
 			//	this.lbb()
 			},
-			kcc(id){
+			kcc(id,stock){
+				if(!stock||stock==0){
+					uni.showToast({
+						title:"库存不足"
+					})
+					return;
+				}
 				this.serviceFlag = true
 				
 				uni.request({
